@@ -1,0 +1,276 @@
+@charset "UTF-8";
+*{
+    padding: 0px auto;
+    margin: 0px auto;
+    font-family: 'Satisfy', cursive;
+}
+.Header{
+    width: 100%;
+    color: white;
+    background-color: #3a75a6;
+}
+.Header h3{
+    line-height: 3.2em;
+    float: left;
+    margin-left: 1.5em;
+}
+#PythonLogo{
+    width: 10em;
+    height: 4em;
+    margin-top: 0.2em;
+    float: right;
+}
+
+.Menu{
+    width: 100%;
+    color: white;
+    background-color: #3a75a6;
+    line-height: 3em;
+    margin: 1em 0em;
+}
+
+.Menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin-left: -2em;
+}
+
+.Menu ul li{
+    display: inline-table;
+    width: 19%;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    display: block;
+}
+
+.Menu ul li a:hover{
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+
+.Footer{
+    width: 100%;
+    height: 20em;
+    background-color:  #3a75a6;
+}
+
+.homepage
+{
+	height: 537px;
+	background: url(../Image/Library_background.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home_left
+{
+	width: 20%;
+    float: left;
+    height: inherit;
+    margin-left: 100px;
+}
+.home_left .grid {
+    display: grid;
+    height: 300px;
+    margin: 30px;
+    width: 100%;
+}
+
+.home_left .grid_container {
+    width: 90%;
+    float: left;
+    background: rgba(255,255,255,0.6);
+    border-radius: 30px;
+    padding-left: 40px;
+}
+.grid_item:hover
+{
+	transform:scale(1.3);
+	cursor: pointer;
+	background: rgba(255,255,0,0.9);
+}
+.grid_item {
+    /*margin: 30px;*/
+    margin: 20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: black solid 3px;
+    line-height: 30px;
+    display: inline-flex;
+    /*background: #ffdf5d;*/
+}
+.icon
+{
+	display: flex;
+	line-height: 30px;
+   	background: #3a75a6;
+    border-radius: 50%;
+    
+}
+
+img#pythonreducedpng {
+    height: 30px;
+    width: 30px;
+}
+a {
+    width: 70%;
+    text-decoration: none;
+}
+.home_right
+{
+	width: 70%;
+    float: right;
+    height: inherit;
+}
+/*
+.text-content {
+    border: black 3px solid;
+    height: 350px;
+    margin-left: 100px;
+    margin-right: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.lesson-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.lesson-example {
+    padding-top: 10px;
+}
+
+.example-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lesson-exercise {
+    padding-top: 10px;
+    /* padding: 10px 5px 0px 5px;
+}
+.lesson-exercise h2, .example-title, .lesson-title
+{
+	font-size:20px;
+	color: #ffdf5d;
+}
+input.exercise-input {
+    width: 150px;
+}
+
+input.exercise-input.correct
+{
+	background:green;
+}
+
+input.exercise-input.incorrect
+{
+	background:red;
+}
+
+input[type="submit"]:hover {
+	transform:scale(1.1);
+	
+}
+*/
+
+.home_right_content {
+    border: black 3px solid;
+    min-height: 350px;
+    margin-left: 100px;
+    margin-right: 300px;
+    padding-left: 100px;
+    padding-top: 30px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.6);
+    margin-top: 30px;
+}
+.lesson, .example, .exercise {
+    padding-bottom: 15px;
+}
+.lesson-title, .example-title, .exercise-title {
+    font-size: 25px;
+    padding-top: 10px;
+    font-weight: 700;
+    color: rgba(255,180,0,0.9);
+}
+input#submitbutton
+{
+	width: fit-content;
+    margin-top: 20px;
+}
+input#submitbutton:hover
+{
+	background: rgba(255,180,0,0.9);
+}
+
+div#pop-up
+{
+	background: url(../Image/pop-up.png) no-repeat center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+.pop-up
+{	
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    border-radius: 20px;
+    background: url(../Images/pop-up.png) no-repeat center;
+    background-size: contain;
+    top: 80px;
+    left: 15%;
+    padding-top: 25%;
+    color: black;
+    z-index: 10;
+    visibility:hidden;
+    padding: 10px;
+}
+.popup-container
+{
+	padding-top: 33%;
+}
+.pop-up h2
+{
+	font-size:30px;
+}
+.popup-container button {
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+}
+.pop-up p
+{
+	font-size:50px;
+}
+
+.Footer{
+    margin-top: 1em;
+    width: 100%;
+    height: 3em;
+    background-color:  #3a75a6;
+}
+
+.Copyright h5{
+    text-align: left;
+    line-height: 2.5em;
+    color: white;
+    margin-left: 1em;
+    float: left;
+    width: 40%;
+}
+
+.Contest h5{
+    width: 55%;
+    float: left;
+    text-align: right;
+    line-height: 2.5em;
+    color: white;
+    margin-left: 1em;
+}

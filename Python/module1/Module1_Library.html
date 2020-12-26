@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">	 <!-- For responsive -->
+	<title>Module1_Library</title>
+	
+	<!-- Link for importing css -->
+	<link rel = "stylesheet" href="Module1_Library_style.css">
+	
+	<!-- Link for icon library -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+	<!-- Link for importing javascript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class="Container">
+	        <div class="Header">
+	            <h3>Python thật đơn giản</h3>
+	            <img id="PythonLogo" src="../Image/PythonLogo.png">
+	            <div style="clear: both;"></div>
+	        </div>
+	        <div class="Menu">
+	            <ul type="none">
+	                <li><a>Trang chủ</a></li>
+	                <li><a>Tài liệu học tập</a></li>
+	                <li><a>Thử thách</a></li>
+	                <li><a>Trò chơi</a></li>
+	                <li><a>Về chúng tôi</a></li>
+	            </ul>
+	        </div>
+	        <div class="homepage">
+				<div class = "home_left">
+					<div class = "grid">
+						<div id="grid_container" class = "grid_container">
+							
+							
+						</div>
+					</div>
+				</div>
+
+		    		<div class = "home_right">
+		    			<div id="problem" class="home_right_content">
+							
+						</div>
+					</div>
+				</div>
+			<div class = "pop-up" id="pop-up">
+				<div class ="popup-container">
+					<h2>Congratulations</h2>
+					<p>Your score: <a>0</a></p>
+					<h2>Try another game?</h2>
+					<a href = ""><button class = "slideshow">Slide Show</button></a>
+					<a href = ""><button class = "memorygame">Memory Game</button></a>
+				</div>
+			</div>
+		</div>
+		
+		
+			<div class="Footer">
+		            <div class="Copyright">
+		                  <h5>Copyright by NEWBIES'S TEAM</h5>
+		            </div>
+		            <div class="Contest">
+		                <h5>HCMUTE'S HACKATHON 2020</h5>
+		          </div>
+			</div>
+			<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+			<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyBWCmDXgK8w77ULrYLyNWZLhgI4iiKvHV0",
+					authDomain: "hackathon-web-726c3.firebaseapp.com",
+					databaseURL: "https://hackathon-web-726c3-default-rtdb.firebaseio.com",
+					projectId: "hackathon-web-726c3",
+					storageBucket: "hackathon-web-726c3.appspot.com",
+					messagingSenderId: "298949262296",
+					appId: "1:298949262296:web:438427df96de4c0af210ad",
+					measurementId: "G-Z6EK1GQMP9"
+				};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.database();
+      const googleProvider = new firebase.auth.GoogleAuthProvider();
+			</script>
+			
+			<script src ="./index.js"></script>
+</body>
+</html>
